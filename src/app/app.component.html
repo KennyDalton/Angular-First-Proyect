@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -15,6 +15,86 @@
   </li>
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+
+<app-hola-mundo></app-hola-mundo>
+<app-hola-mundo></app-hola-mundo>
+
+<hello-world></hello-world> 
+<hello-world></hello-world> 
+<hello-world></hello-world>    
+-->
+<!-- recorridos -->
+<!-- 
+<ul>
+   <li>{{ users[0] }}</li>
+   <li>{{ users[1] }}</li>
+   <li>{{ users[2] }}</li>
+   <li>{{ users[3] }}</li>
+ </ul>
+ <ul>
+   <li *ngFor="let user of users">{{ user }}</li>
+ </ul>
+ <ul>
+   <li *ngIf="activated">
+     Activated!
+   </li>
+ </ul>
+<ul>
+  <app-user *ngFor = "let user of users" [userName]="user"></app-user>
+</ul>
+-->
+<!-- TypeScript -->
+<!-- <div>
+  <p>name: {{ name }}</p>
+  <p>age: {{ age }}</p>
+  <p>Street: {{address.street}}</p>
+  <p>city: {{address.city}}</p>
+  <ul>
+    Hobbies:
+    <li *ngFor = "let hobby of hobbies">{{ hobby }}</li>
+  </ul>
+</div>
+ -->
+<!-- 
+<form (submit)="addUser(newUser)">
+  <input type="text" #newUser>
+  <button>
+    Send User
+  </button>
+</form>
+<ul>
+  <li *ngFor = "let user of users"> 
+    {{user}} <button (click)="sayHello(user)">Hello</button><button (click)="deleteUser(user)">X</button>
+  </li>
+</ul>
+
+<hr>
+
+<div>
+  <form>
+    <input type="text" name='name' [(ngModel)]='name'>
+    <input type="text" name='age' [(ngModel)]='age'>
+  </form>
+  name: {{ name }} <br>
+  age: {{ age }}
+</div>
+
+<hr>
+
+<div *ngFor='let post of posts'>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.body }}</p>
+</div> -->
+
+<router-outlet></router-outlet>
+<ul>
+  <li>
+    <a routerLink='/'>Home</a>
+  </li>
+  <li>
+    <a routerLink='about'>About</a>
   </li>
 </ul>
 
